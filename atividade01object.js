@@ -87,3 +87,74 @@ console.log(dadosVariados)
 dadosVariados.push("jaragua do sul")
 dadosVariados.unshift("Vila lenzi")
 console.log(dadosVariados)
+
+// ------------------------------------------------------------
+// EXERCÍCIO 6 – indexOf, includes
+// ------------------------------------------------------------
+// a) Dado um array de nomes, verifique o índice de um nome específico.
+// b) Busque por um nome específico que não existe na lista.
+
+const nomes = ["Ana", "Bruno", "Carolina", "Daniel", "Eduardo"];
+// → Seu código aqui:
+
+
+console.log(nomes.indexOf("Bruno"));
+console.log(nomes.indexOf("Carlos"));
+const existeFernando = nomes.includes("Fernando");
+console.log(existeFernando);
+const existeAna = nomes.includes("Ana");
+console.log(existeAna);
+
+nomes.includes
+
+
+// ------------------------------------------------------------
+// EXERCÍCIO 7 – slice, concat
+// ------------------------------------------------------------
+// a) Dado dois arrays de letras, junte os 2 em um só usando concat() e exiba o resultado.
+// b) Use slice para criar uma nova array, contendo somente os elementos entre a 2ª e a 4ª posição
+//    do array que você criou usando o concat() e exiba o resultado.
+
+const letras1 = ["a", "b", "c", "d", "e"];
+const letras2 = ["f", "g"];
+// → Seu código aqui:
+
+
+const letras3 = letras1.concat(letras2);
+console.log(letras3);
+const letras4 = letras3.slice(1,4);
+console.log(letras4);
+
+
+
+
+// ------------------------------------------------------------
+// EXERCÍCIO 8 – arrays aninhados (array dentro de array) e flat
+// ------------------------------------------------------------
+// a) Crie um array aninhado, ebixa-o. Acesso elementos internos deste array.
+// b) Use flat para achatar o array em um unico nível (os arrays internos se tornam elementos individuais) e exiba-o.
+
+// → Seu código aqui:
+
+
+let dados1 = [
+    ["html" , "javaScript"],
+    ["C++" , "C#"],
+    ["Java" , "Python"],
+];
+console.log(dados1);
+console.log(dados1[0]);
+console.log(dados1[1]);
+console.log(dados1[2]);
+
+const achatado = dados1.flat();
+console.log(achatado);
+
+
+
+const users = [
+    { id: 1, name: "John Doe", age: 30 },
+    { id: 2, name: "Jane Smith", age: 28 },
+    { id: 3, name: "Bob Johnson", age: 35 }
+];
+console.table(users);

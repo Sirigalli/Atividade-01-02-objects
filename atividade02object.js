@@ -143,6 +143,38 @@ console.log(listaDeAluno[1].nome);
 console.log("Segundo aluno:", listaDeAluno[1].nome);
 
 
+// ------------------------------------------------------------
+// EXERCÍCIO 7 – Objetos e Arrays
+// ------------------------------------------------------------
+// a) Crie um array "listaDeAlunos" que contenha 3 alunos. Cada aluno deve ser um objeto (não uma variável que contem um objeto).
+// b) Cada objeto aluno deve conter nome(string), idade(number) e notas(array de numbers).
+// c) Exiba o nome e as notas de cada aluno.
+
+let listaDeAlunos = [
+    { 
+        nome: "Amanda",
+        idade: 26,
+        notas: [9,10,8],
+    },
+    {
+        nome: "Eduardo",
+        idade: 36,
+        notas: [5,3,4],
+    },
+    {
+        nome: "Cesar",
+        idade: 28,
+        notas: [8,6,3],
+    },
+];
+console.log(listaDeAlunos);
+console.log(listaDeAlunos[0].nome, listaDeAlunos[0].notas);
+console.log(listaDeAlunos[1].nome, listaDeAlunos[1].notas);
+console.log(listaDeAlunos[2].nome, listaDeAlunos[2].notas);
+
+
+
+
 
 
 
