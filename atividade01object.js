@@ -48,7 +48,7 @@ console.log(cores.length)
 
 
 let numeros = [27, 1999, 18, 100]
-console.log(numeros, numeros.length)
+console.log(`O valor de numeros armazenados é ${numeros}, a quantidade de numeros é ${numeros.length}.`)
 
 
 
